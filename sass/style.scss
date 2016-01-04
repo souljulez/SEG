@@ -1,0 +1,273 @@
+@font-face{
+	font-family: SEGRegular;
+	src: url(../fonts/segfoco_rg.ttf);
+}
+@font-face{
+	font-family: SEGBlack;
+	src: url(../fonts/segfoco_blk.ttf);
+}
+@font-face{
+	font-family: SEGBold;
+	src: url(../fonts/segfoco_bd.ttf);
+}
+body{
+	font-family: SEGRegular;
+}
+.container{
+	background: url(../images/bg.png) repeat-y 0% 30%;
+	background-size: cover;
+}
+hr{
+	margin: 1px 0 5px;
+}
+.hero{
+	width: 880px;
+	margin: 40px auto 0;
+	background: #ce1233;
+	overflow: hidden;
+	position: relative;
+}
+.hero-text{
+	float: left;
+	width: 40%;
+	padding:20px 0 0 60px;
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	position: absolute;
+	left: 15px;
+	h3{
+		font-size: 16px;
+		font-family: SEGBold;
+		margin-bottom: 2px;
+	}
+	p{
+		line-height: 1;
+	}
+	.hero-callout{
+		color: #ce1233;
+		background: #fff;
+		font-family: SEGBold;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 1;
+		padding: 5px 0 0;
+		margin-bottom: 10px;
+	}
+	hr:last-child{
+		margin: -5px 20% 0;
+	}
+}
+.hero-image{
+	float: right;
+	img{
+		float: right;
+	}
+}
+.hero-image-mobile{
+	display: none;
+}
+.video-promo{
+	width: 585px;
+	margin: 30px auto;
+}
+.item-grid{
+	width: 880px;
+	margin: 40px auto 80px;
+	padding: 30px;
+	background: #ce1233;
+	color: #fff;
+	text-align: center;
+	h1{
+		font-family: SEGBold;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	h2{
+		font-weight: bold;
+		strong{
+			font-family: SEGBold;
+		}
+	}
+	.row{
+		height: auto;
+		width: 100%;
+		margin: 20px 0;
+		display: inline-block;
+	}
+	.col-sm-6{
+		height: 125px;
+		padding: 0 7%;
+	}
+	.left img{
+		margin-right: -10px;
+		float: right;
+	}
+	.right img{
+		margin-left: -10px;
+		float: left;
+	}
+	.helper{
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.price-box-inner{
+		display: block;
+		height: 100%;
+	}
+	.price-box{
+		position: relative;
+		width: 120px;
+		height: 100%;
+		line-height: 1;
+		.price-top,
+		.price-bottom{
+			border: 1px solid #fff;
+			background: #ce1233;
+			width: 100%;
+			position: absolute;
+		}
+		.price-top{
+			padding-top: 5px;
+			top: 0;
+			.price-extra{
+				float: right;
+				font-size: 5px;
+				padding: 1px 10px 0 0;
+			}
+		}
+		.price-circle{
+			width: 80px;
+			height: 80px;
+			background: #fff;
+			color: #000;
+			border-radius: 50%;
+			box-shadow: 0 0 0 12px #ce1233, 0 0 0 13px #fff;
+			font-size: 60px;
+			font-family: SEGBold;
+			margin: 15px auto 0;
+			padding-top: 10px;
+			line-height: 0.94;
+			.now{
+				font-size: 14px;
+				font-weight: bold;
+				text-transform: uppercase;
+				display: block;
+				margin-bottom: 5px;
+			}
+			.dollar-sign{
+				font-size: 25px;
+				font-weight: normal;
+				vertical-align: top;
+			}
+			.cents{
+				font-size: 25px;
+				vertical-align: top;
+			}
+			.per{
+				font-size: 12px;
+				position: absolute;
+				bottom: 38px;
+				right: 37px;
+				&.shift{
+					bottom: 50px;
+					right: 25px;
+				}
+			}
+		}
+		.price-bottom{
+			padding: 5px 2px;
+			bottom: 0;
+			font-size: 10px;
+			.weight{
+				font-size: 6px;
+				padding-top: 1px;
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+	.left .price-box{
+		float: right;
+	}
+	.right .price-box{
+		float: left;
+	}
+}
+
+@media (max-width: 992px){
+	.container{
+		width: 100%;
+	}
+	.hero{
+		max-width: 100%;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		.hero-image{
+			width: 60%;
+		}
+		.hero-text{
+			padding: 0;
+		}
+	}
+	.item-grid{
+		max-width: 100%;
+		.left{
+			padding-left: 0;
+		}
+		.right{
+			padding-right: 0;
+		}
+	}
+}
+@media (max-width: 768px){
+	.container{
+		background-position: 50% 50%;
+	}
+	.hero{
+		.hero-text{
+			position: relative;
+			padding: 0px 0px 20px 20px;
+			font-size: 1.5vw;
+			.hero-callout{
+				font-size: 2vw;
+			}
+		}
+		.hero-image{
+			position: relative;
+			right: -30px;
+		}
+	}
+	.video-promo{
+		max-width: 100%;
+	}
+	.item-grid{
+		h1{
+			font-size: 5.3vw;
+			margin-bottom: 40px;
+		}
+		.row{
+			margin: 0 0 35px;
+		}
+		.col-sm-6{
+			padding: 0;
+			display: inline-block;
+			width: 100%;
+			.price-box-inner{
+				display: inline-block;
+			}
+			&.left{
+				margin-bottom: 40px;
+			}
+		}
+		.right .price-box,
+		.right img{
+			float: right;
+		}
+	}
+}
